@@ -45,3 +45,46 @@ $$
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
+
+---
+
+## Mermaids
+
+<div class="mermaid">
+graph TD
+    subgraph SQL1
+        SQL_Stage
+        SQL_Live
+    end
+    subgraph WebV1
+        LiveSite
+        StageSite
+    end
+    subgraph WSV1
+        FileManager
+    end
+    subgraph S3
+        Logs
+    end
+    SQL_Stage--Publish-->SQL_Live
+    StageSite-->SQL_Stage-->StageSite
+    LiveSite-->SQL_Live-->LiveSite
+    LiveSite-->FileManager
+    FileManager-->Logs
+</div>
+
+---
+
+## Unicorns
+
+<div class="mermaid">
+gantt
+  title My Product Roadmap
+  dateFormat  YYYY-MM-DD
+  section Cool Feature
+  A task           :a1, 2022-02-25, 30d
+  Another task     :after a1, 20d
+  section Rad Feature
+  Task in sequence :2022-03-04, 12d
+  Task, No. 2      :24d
+</div>

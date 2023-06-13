@@ -50,6 +50,8 @@ $$
 
 ## Mermaids
 
+https://mermaid.js.org/intro/
+
 <div class="mermaid">
 graph TD
     subgraph SQL1
@@ -87,4 +89,25 @@ gantt
   section Rad Feature
   Task in sequence :2022-03-04, 12d
   Task, No. 2      :24d
+</div>
+
+---
+
+## Cakes
+
+<div class="mermaid">
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+    Tools
+      Pen and paper
+      Mermaid
 </div>
